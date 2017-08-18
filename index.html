@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+ 
+ <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>WICSE Treasurer App</title>
+  </head>
+  <body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://www.cise.ufl.edu/dept/ufwicse/home">UF WICSE</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">General Ledger</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+    
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+</button>
+<div class='container'> <table class="table table-hover">
+	<thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Type</th>
+        <th>Amount</th>
+	<th>Short Description</th>
+	<th>Receipt</th>
+      </tr>
+    </thead>
+	<tbody id="ledger"></tbody>
+</table></div>    <!-- All of the Node.js APIs are available in this renderer process. -->
+  </body>
+
+  <script>
+    require('./quickstart.js')
+    require('./renderer.js')
+  </script>
+</html>
